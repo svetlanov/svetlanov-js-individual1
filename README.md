@@ -197,9 +197,13 @@
 
 ## Список использованных источников
 https://developer.mozilla.org/ru/
+
 https://www.w3schools.com/js/js_classes.asp
+
 https://learn.javascript.ru/class
+
 https://www.digitalocean.com/community/tutorials/understanding-classes-in-javascript
+
 https://nodejs.org/api/readline.html
 
 
