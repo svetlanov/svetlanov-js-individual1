@@ -1,0 +1,19 @@
+{
+  "name": "transaction-analyzer",
+  "version": "1.0.0",
+  "description": "This JavaScript console application is designed to analyze financial transactions. It allows the user to load transaction data, analyze it by various parameters, including transaction type, amount, date, and more.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svetlanov/svetlanov-js-individual1.git"
+  },
+  "author": "Svetlana Novak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/svetlanov/svetlanov-js-individual1/issues"
+  },
+  "homepage": "https://github.com/svetlanov/svetlanov-js-individual1#readme"
+}
