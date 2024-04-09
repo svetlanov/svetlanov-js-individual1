@@ -1,4 +1,3 @@
-const fs = require('fs');
 const readline = require('readline');
 const TransactionAnalyzer = require('./transactionAnalyzer.js');
 const transactionsData = require('./transactions.json');
