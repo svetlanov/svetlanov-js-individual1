@@ -54,7 +54,7 @@ class TransactionAnalyzer {
      */
     calculateTotalAmountByDate(year, month, day) {
         return this.transactions.reduce( (accumulator, item) => {
-            const [transactionYear, transactionMonth, transactionDay] = item.transaction_date;
+            const [transactionYear, transactionMonth, transactionDay] = item.transaction_date.split('-');
             const isSameYear = !year || transactionYear === year;
             const isSameMonth = !month || transactionMonth === month;
             const isSameDay = !day || transactionDay === day;
