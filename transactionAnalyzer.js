@@ -54,18 +54,12 @@ class TransactionAnalyzer {
      */
     calculateTotalAmountByDate(year, month, day) {
         return this.transactions.reduce( (accumulator, item) => {
-            let targetDate = '';
-            if (year) {
-                targetDate = `${year}`;
-            }
-            if (month) {
-                targetDate += `-${month}`;
-            }
-            if (day) {
-                targetDate += `-${day}`;
-            }
+            const [transactionYear, transactionMonth, transactionDay] = item.transaction_date;
+            const isSameYear = !year || transactionYear === year;
+            const isSameMonth = !month || transactionMonth === month;
+            const isSameDay = !day || transactionDay === day;
 
-            let transactionAmount = (item.transaction_date.startsWith(targetDate)) ? item.transaction_amount : 0;
+            let transactionAmount = (isSameYear && isSameMonth && isSameDay) ? item.transaction_amount : 0;
             return accumulator + transactionAmount;
         }, 0)
     }
